@@ -1,0 +1,33 @@
+Total: 50 marks
+
+User Class (21 marks):
+	1 - toString() returns proper song numbers
+	1 - addSong(Song s) adds the song to the user's song list
+	1 - addSong(Song s) updates the song's owner attribute
+	2 - totalSongTime() calculates and returns the total duration in seconds
+	1 - register(MusicExchangeCenter m) calls registerUser method from MusicExchangeCenter
+	1 - logon() method updates online attribute to true
+	1 - logoff() method updates online attribute to false
+	2 - requestCompleteSonglist(MusicExchangeCenter m) returns all available songs
+	3 - requestCompleteSonglist(MusicExchangeCenter m) has properly formatted strings
+	2 - requestSonglistByArtist(MusicExchangeCenter m, String artist) returns all available songs by that artist
+	3 - requestSonglistByArtist(MusicExchangeCenter m, String artist) has properly formatted strings
+	3 - downloadSong(MusicExchangeCenter m, String title, String owner) calls getSong method and adds song to the user's songlist if it isn't null
+	
+	
+Music Exchange Center Class (29 marks):
+	1 - onlineUsers() method returns proper set of online users
+	1 - allAvailableSongs() creates a new ArrayList with available songs and returns it
+	2 - toString() properly shows number of online users and total number of songs available
+	1 - userWithName(String s) returns a user if there is one with that name, null otherwise
+	1 - registerUser(User x) adds user only if there is not one with a matching name already
+	1 - registerUser(User x) uses userWithName(String s) method
+	2 - availableSongsByArtist(String artist) returns a new array list containing appropriate songs
+	1 - getSong(String title, String owner) returns proper values (song when available, null when not)
+	1 - getSong(String tital, String owner) adds song to downloadedSongs list correctly
+	3 - getSong(String title, String owner) updates royalties HashMap correctly
+	3 - dispayRoyalties() prints out the correctly formatted data (order is not important)
+	6 - uniqueDownloads() returns TreeSet containing unique Song objects that have been downloaded
+	6 - songsByPopularity() returns array list of Pair objects that is properly sorted (decreasing order of popularity)
+	
+	

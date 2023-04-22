@@ -1,0 +1,26 @@
+Total Marks: 50
+
+Overall Class Design and Use of OOP Principles (20 marks)
+	Makes use of inheritance
+	Proper class hierarchy
+	Minimizes duplicated code
+	Proper encapsulation
+	All member/attribute variables are private unless justified
+	Does not have unnecessary getter/setter methods
+	Makes proper use of abstract classes
+	
+ElectronicStore Class (15 marks):
+	2 marks - Constructor initializes state appropriately
+	2 marks - printStock() method prints out the store inventory correctly
+	1 marks - addProducts(Product p) method returns correct values
+	2 marks - addProducts(Product p) method updates stock array appropriately
+	4 marks - sellProducts() method queries user for information and sells product when valid information is entered (must update revenue, product inventories, etc.)
+	4 marks - sellProducts(int item, int amount) method sells product when arguments are valid (must update revenue, product inventories, etc.)
+	
+Product Class (5 marks)
+	2 marks - Constructor initializes state appropriately
+	3 marks - sellUnits(int units) method works correctly (returns correct values, updates state appropriately)
+
+Other Classes (10 marks):
+	4 marks - Constructors initialize all state appropriately
+	6 marks - toString() methods return appropriate representations of objects
